@@ -46,6 +46,13 @@
             width: 40px;
             z-index: 1000;
         }
+        #bj-shade{
+            display: block;
+            position: absolute;
+            background:url("images/xq_bj.png");
+            z-index: 1;
+            background-size: cover;
+        }
     </style>
     <script>
         // 猫动画
@@ -65,6 +72,7 @@
     </script>
 </head>
 <body onLoad="image()">
+<div id="bj-shade"></div>
 <img id="home" src="images/home.png" alt="" >
 <img id="imgBj" src="images/home_pic_calendar.png" alt="">
 <img src="images/cat1.png" id="cat" alt="">
