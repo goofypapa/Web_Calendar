@@ -55,7 +55,7 @@
         }
         #blackShade{
             width: 100%;
-            height: 101%;
+            height: 130%;
             display: block;
             position: absolute;
             background-color: #000;
@@ -164,10 +164,15 @@
 <script>
     // var bili=(window.screen.width/500);
     var pmWidth=window.screen.availWidth;
+    alert(window.screen.availWidth);
+    alert(window.screen.availHeight);
+    alert(window.screen.availWidth/window.screen.availHeight);
     var bjLeft=pmWidth/2-270;
     console.log(bjLeft);
     var bjSize=document.getElementById("imgBj");
     bjSize.style.left=bjLeft+"px";
+    // var bookblockSize=document.getElementById("bb-bookblock");
+    // bookblockSize.style.marginLeft=bjLeft+"px";
     var catSize=document.getElementById("cat");
     catSize.style.left=bjLeft/3*2+"px";
     catSize.style.bottom=pmWidth/20+"px";
